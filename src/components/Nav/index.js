@@ -7,9 +7,7 @@ function Nav(props) {
         setContactSelected,
         contactSelected,
         setProjectSelected,
-        projectSelected,
-        setResumeSelected,
-        resumeSelected
+        projectSelected
     } = props;
     return (
         <header className="flex-row px-1">
@@ -25,7 +23,6 @@ function Nav(props) {
                             setAboutSelected(true);
                             setProjectSelected(false);
                             setContactSelected(false);
-                            setResumeSelected(false);
                         }}
                         >
                             About Me
@@ -36,7 +33,6 @@ function Nav(props) {
                             setAboutSelected(false);
                             setProjectSelected(true);
                             setContactSelected(false);
-                            setResumeSelected(false);
                         }}
                         >
                             Portfolio
@@ -47,18 +43,16 @@ function Nav(props) {
                             setAboutSelected(false);
                             setProjectSelected(false);
                             setContactSelected(true);
-                            setResumeSelected(false);
                         }}
                         >
                             Contact
                         </span>
                     </li>
-                    <li className={`mx-2 ${resumeSelected && 'navActive'}`}>
+                    <li className={`mx-2 ${!aboutSelected && !contactSelected && !projectSelected && 'navActive'}`}>
                         <span onClick={() => {
                             setAboutSelected(false);
                             setContactSelected(false);
                             setProjectSelected(false);
-                            setResumeSelected(true);
                         }}
                         >
                             Resume

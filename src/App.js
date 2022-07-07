@@ -1,13 +1,16 @@
 import React, {useState} from 'react';
 import './index.css';
 import Nav from './components/Nav';
+import About from './components/About';
+import Contact from './components/Contact';
+import Project from './components/Project';
+import Resume from './components/Resume';
 
 function App() {
 
   const [aboutSelected, setAboutSelected] = useState(true);
   const [contactSelected, setContactSelected] = useState(false);
   const [projectSelected, setProjectSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <div>
@@ -19,13 +22,18 @@ function App() {
           contactSelected={contactSelected}
           setProjectSelected={setProjectSelected}
           projectSelected={projectSelected}
-          setResumeSelected={setResumeSelected}
-          resumeSelected={resumeSelected}
         />
       </div>
       <main>
-        <div>Contact</div>
-        <div>Projects</div>
+        {aboutSelected ? (
+          <About/>
+        ) : contactSelected ? (
+          <Contact/>
+        ) : projectSelected ? (
+          <Project/>
+        ) : (
+          <Resume/>
+        )}
       </main>
       <div>Footer</div>
     </div>

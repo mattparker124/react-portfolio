@@ -1,13 +1,13 @@
 import React from 'react';
 
-function Project() {
+function Portfolio() {
     return (
         <section>
             <p>
-                PROJECT SECTION!
+                PORTFOLIO SECTION!
             </p>
         </section>
     );
 }
 
-export default Project;
+export default Portfolio;

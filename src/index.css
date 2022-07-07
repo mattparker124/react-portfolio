@@ -13,6 +13,7 @@ main {
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
+  --spacing-three: calc(1.5rem);
   --spacing-five: calc(2.5rem);
 }
 
@@ -97,6 +98,10 @@ header {
 
 header a {
   color: var(--light);
+}
+
+header h2 {
+  margin: auto;
 }
 
 button {
@@ -205,6 +210,11 @@ textarea {
   margin-bottom: var(--spacing-two);
 }
 
+.my-3 {
+  margin-top: var(--spacing-three);
+  margin-bottom: var(--spacing-three);
+}
+
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
@@ -228,6 +238,13 @@ textarea {
 .py-2 {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
+}
+
+.pfp {
+  border-radius: 50%;
+  box-shadow: 0 0 25px 10px #2d0047;
+  width: 55%;
+  margin-left: 10px;
 }
 
 .card {
@@ -291,4 +308,20 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+@media screen and (min-width: 700px) {
+  .pfp {
+    border-radius: 50%;
+    box-shadow: 0 0 25px 10px #2d0047;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .pfp {
+    border-radius: 50%;
+    box-shadow: 0 0 25px 10px #2d0047;
+    width: 25%;
+  }
 }

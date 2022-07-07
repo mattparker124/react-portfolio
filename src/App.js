@@ -8,9 +8,9 @@ import Resume from './components/Resume';
 
 function App() {
 
-  const [aboutSelected, setAboutSelected] = useState(true);
+  const [aboutSelected, setAboutSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const [portfolioSelected, setPortfolioSelected] = useState(true);
 
   return (
     <div>

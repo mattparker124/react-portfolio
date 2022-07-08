@@ -35,7 +35,7 @@ class Slide extends React.Component {
     }
     
     render() {
-      const { src, button, headline, location, index } = this.props.slide
+      const { src, button, headline, paragraph, location, index } = this.props.slide
       const current = this.props.current
       let classNames = 'slide'
       
@@ -62,6 +62,7 @@ class Slide extends React.Component {
           
           <article className="slide__content">
             <h2 className="slide__headline">{headline}</h2>
+            <p className="slide__paragraph">{paragraph}</p>
             <button className="slide__action btn" onClick={() => openInNewTab(location)}>{button}</button>
           </article>
         </li>

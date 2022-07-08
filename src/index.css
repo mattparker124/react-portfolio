@@ -30,6 +30,8 @@ main {
 html,
 body {
   min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -42,6 +44,7 @@ body {
   background: var(--dark);
   color: var(--light);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
 }
 
 #app {
@@ -63,6 +66,7 @@ h6 {
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
+  animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
 }
 
 h1 {
@@ -92,6 +96,7 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
 }
 
 a {
@@ -109,6 +114,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 9999;
+  animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
 }
 
 header a {
@@ -260,6 +266,7 @@ textarea {
   box-shadow: 0 0 25px 10px #2d0047;
   width: 55%;
   margin-left: 10px;
+  animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
 }
 
 .card {
@@ -340,7 +347,7 @@ a {
 }
 
 .btn {
-  background-color: var(--color-primary);
+  background-color: rgb(137, 78, 172);
   border: none;
   border-radius: 0.125rem;
   color: white;
@@ -505,6 +512,13 @@ a {
   font-size: 8vmin;
   font-weight: 600;
   position: relative;
+  color:var(--secondary);
+  background-color: rgba(255, 177, 255, 0.85);
+}
+
+.slide__paragraph {
+  color:var(--light);
+  background-color: rgba(90, 47, 90, 0.85);
 }
 
 .slide__content {

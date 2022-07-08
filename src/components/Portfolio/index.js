@@ -4,38 +4,42 @@ import Slider from '../Slider';
 const slideData = [
     {
       index: 0,
-      headline: 'New Fashion Apparel',
-      button: 'Shop now',
-      location: 'https://github.com/mattparker124/react-portfolio',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg'
+      headline: 'Budget Tracker',
+      paragraph: 'An online and offline budget tracking app to help you manage funds on-the-go from anywhere, even without an internet connection, all packaged into a simple PWA that can be installed straight onto your desktop or phone!',
+      button: 'Start Budgeting!',
+      location: 'https://pacific-island-20775.herokuapp.com/',
+      src: '/slides/budget.png'
     },
     {
       index: 1,
-      headline: 'In The Wilderness',
-      button: 'Book travel',
-      location: 'https://github.com/mattparker124/react-portfolio',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg'
+      headline: 'Codewire',
+      paragraph: 'A social networking app utuilizing NoSQL to allow developers to make an account and discuss various development-related topics.',
+      button: 'Get Started!',
+      location: 'https://codewireapp.herokuapp.com/',
+      src: '/slides/codewire.png'
     },
     {
       index: 2,
-      headline: 'For Your Current Mood',
-      button: 'Listen',
-      location: 'https://github.com/mattparker124/react-portfolio',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg'
+      headline: 'Work-Day Scheduler',
+      paragraph: 'Plan out your work-day in realtime in this app that remembers your schedule and tracks it throughout the day.',
+      button: 'Get Focused!',
+      location: 'https://mattparker124.github.io/work-day-scheduler/',
+      src: '/slides/work-day.png'
     },
     {
       index: 3,
-      headline: 'Focus On The Writing',
-      button: 'Get Focused',
-      location: 'https://github.com/mattparker124/react-portfolio',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg'
+      headline: 'Run Buddy',
+      paragraph: 'Run Buddy was my first project in HTML and CSS, setting up a basic website using the fundamentals of front-end development.',
+      button: `Let's Run!`,
+      location: 'https://mattparker124.github.io/run-buddy/',
+      src: '/slides/run-buddy.png'
     }
 ]
 
 function Portfolio() {
     return (
         <section>
-            <Slider heading="Example Slider" slides={slideData} />
+            <Slider heading="Projects" slides={slideData} />
         </section>
     );
 }

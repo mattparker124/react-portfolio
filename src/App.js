@@ -36,8 +36,8 @@ function App() {
         )}
       </main>
       <footer>
-        <a href="https://github.com/mattparker124" target="_blank" rel="noreferrer"><img className="ref-icon" src="/icons/github.png" alt="GitHub Link"/></a>
-        <a href="https://www.linkedin.com/in/matthew-parker-5aa060139/" target="_blank" rel="noreferrer"><img className="ref-icon" src="/icons/linkedin.png" alt="LinkedIn Link"/></a>
+        <a href="https://github.com/mattparker124" target="_blank" rel="noreferrer"><img className="ref-icon" src="%PUBLIC_URL%/icons/github.png" alt="GitHub Link"/></a>
+        <a href="https://www.linkedin.com/in/matthew-parker-5aa060139/" target="_blank" rel="noreferrer"><img className="ref-icon" src="%PUBLIC_URL%/icons/linkedin.png" alt="LinkedIn Link"/></a>
       </footer>
     </div>
   );

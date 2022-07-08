@@ -4,7 +4,7 @@ function Resume() {
     return (
         <section>
             <p>
-                RESUME SECTION!
+                Resume coming soon
             </p>
         </section>
     );

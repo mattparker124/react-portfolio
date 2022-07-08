@@ -124,6 +124,17 @@ header h2 {
   margin: auto;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-left: 1%;
+}
+
+.ref-icon {
+  width: 10%;
+  padding: 0% 2%;
+}
+
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -394,7 +405,7 @@ a {
     }
 
 .slider {
-  --slide-size: 70vmin;
+  --slide-size: 65vmin;
   --slide-margin: 4vmin;
   
   height: var(--slide-size);

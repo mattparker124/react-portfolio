@@ -44,6 +44,7 @@ class Slide extends React.Component {
       else if (current + 1 === index) classNames += ' slide--next'
           
       return (
+        <div>
         <li 
           ref={this.slide}
           className={classNames} 
@@ -65,7 +66,9 @@ class Slide extends React.Component {
             <p className="slide__paragraph">{paragraph}</p>
             <button className="slide__action btn" onClick={() => openInNewTab(location)}>{button}</button>
           </article>
-        </li>
+        </li><br/><br/><br/>
+        <p className="slide__underparagraph">{paragraph}</p>
+        </div>
       )
     }
   }

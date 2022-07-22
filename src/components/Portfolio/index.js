@@ -4,6 +4,14 @@ import Slider from '../Slider';
 const slideData = [
     {
       index: 0,
+      headline: 'Net Pets',
+      paragraph: 'Net Pets is an online game about managing and interacting with your pet, and meeting other players who are doing the same.',
+      button: `Check it out!`,
+      location: 'https://netpetsheroku.herokuapp.com/',
+      src: '/react-portfolio/slides/net-pets.png'
+    },
+    {
+      index: 1,
       headline: 'Budget Tracker',
       paragraph: 'An online and offline budget tracking app to help you manage funds on-the-go from anywhere, even without an internet connection, all packaged into a simple PWA that can be installed straight onto your desktop or phone!',
       button: 'Start Budgeting!',
@@ -11,7 +19,7 @@ const slideData = [
       src: '/react-portfolio/slides/budget.png'
     },
     {
-      index: 1,
+      index: 2,
       headline: 'Codewire',
       paragraph: 'A social networking app utuilizing NoSQL to allow developers to make an account and discuss various development-related topics.',
       button: 'Get Started!',
@@ -19,7 +27,7 @@ const slideData = [
       src: '/react-portfolio/slides/codewire.png'
     },
     {
-      index: 2,
+      index: 3,
       headline: 'Work-Day Scheduler',
       paragraph: 'Plan out your work-day in realtime in this app that remembers your schedule and tracks it throughout the day.',
       button: 'Get Focused!',
@@ -27,7 +35,7 @@ const slideData = [
       src: '/react-portfolio/slides/work-day.png'
     },
     {
-      index: 3,
+      index: 4,
       headline: 'Run Buddy',
       paragraph: 'Run Buddy was my first project in HTML and CSS, setting up a basic website using the fundamentals of front-end development.',
       button: `Let's Run!`,
